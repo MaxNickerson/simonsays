@@ -1,0 +1,18 @@
+import RPi.GPIO as GPIO
+from time import sleep
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(26, GPIO.OUT)
+
+p = GPIO.PWM(26, 100)
+
+def Blink():
+    for x in range(0,20):
+        GPIO.output(26, True)
+        p.start(100)
+        p.ChangeDutyCycle(90)
+        p.ChangeFrequency(400)
+        sleep(2)
+        p.stop()
+    GPIO.cleanup()
+
+Blink()
