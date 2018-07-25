@@ -35,7 +35,7 @@ def setColor(col):   # For example : col = 0x112233
 		col = 0x0000FF
 	elif (col == 'y') or (col == 'Y'):
 		col = 0xFFFF00
-	elif (col == 'o') or (col == 'O'):
+	elif (col == 'p') or (col == 'P'):
 		col = 0xFF00CC
 	R_val = (col & 0xff0000) >> 16
 	G_val = (col & 0x00ff00) >> 8

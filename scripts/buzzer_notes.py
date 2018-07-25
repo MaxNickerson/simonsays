@@ -12,7 +12,7 @@ Buzz = GPIO.PWM(buzz_pin, 1000)
 
 frequencies = [40, 80, 90, 120]
 n = random.randint(0,3)
-Buzz.ChangeFrequency(frequencies[n]
+Buzz.ChangeFrequency(frequencies[n])
 #Buzz.start(50)
 time.sleep(0.5)
 Buzz.stop()
